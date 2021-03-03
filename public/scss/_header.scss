@@ -1,0 +1,73 @@
+.header{
+    .headerTop{
+        background-color: #959595;
+        padding: 9px 0;
+        .headerText{
+            font-family: $secondary-font;
+            font-family: 400;
+            color: $secondary-color;
+            font-size: 14px;
+            @include media1367{
+                font-size: 13px;
+            }
+            @include media1199{
+                font-size: 12px;
+            }
+        }
+    }
+    .headerMain{
+        background-color: $fourth-color;
+        .headerWrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            .logo{
+                max-width: 120px;
+                @include media1601{
+                    max-width: 110px;
+                }
+                @include media1367{
+                    max-width: 100px;
+                }
+                @include media575{
+                    max-width: 85px;
+                }
+            }
+            .headerBtn{
+                .custom-btn{
+                    padding: 18px 62px 18px 48px;
+                    font-size: 18px;
+                    @include media1601{
+                        padding: 16px 54px 16px 40px;
+                        font-size: 16px;
+                    }
+                    @include media1367{
+                        padding: 14px 47px 14px 33px;
+                        font-size: 14px;
+                    }
+                    @include media1199{
+                        padding: 14px 47px 14px 33px;
+                        font-size: 13px;
+                    }
+                    @include media575{
+                        padding: 12px 30px 12px 25px;
+                        font-size: 12px;
+                    }
+                    .handIcon{
+                        font-size: 18px;
+                        @include media1601{
+                            font-size: 16px;
+                        }
+                        @include media1367{
+                            font-size: 14px;
+                        }
+                        @include media575{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

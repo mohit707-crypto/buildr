@@ -1,0 +1,70 @@
+.footer{
+    background-color: $fourth-color;
+    padding: 17px 0 18px;
+    .footerWrapper{
+        .logo{
+            display: block;
+            max-width: 120px;
+            @include media1601{
+                max-width: 110px;
+            }
+            @include media1367{
+                max-width: 100px;
+            }
+            @include media991{
+                margin: 0 auto;
+            }
+            @include media575{
+                max-width: 85px;
+            }
+        }
+        .copyright{
+            color: $primary-color;
+            text-align: center;
+            font-weight: 400;
+            font-size: 19px;
+            @include media1601{
+                font-size: 17px;
+            }
+            @include media1199{
+                font-size: 15px;
+            }
+            @include media991{
+                margin: 15px auto;
+            }
+        }
+        .navWrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            transform: translateX(40px);
+            @include media1367{
+                transform: translateX(20px);
+            }
+            @include media991{
+                justify-content: center;
+                transform: translateX(0);
+            }
+            li{
+                color: $primary-color;
+                font-weight: 400;
+                margin: 0 3px;
+                font-size: 15px;
+                @include media1601{
+                    margin: 0 2px;
+                    font-size: 14px;
+                }
+                @include media1199{
+                    font-size: 13px;
+                }
+                @include media575{
+                    font-size: 12px;
+                }
+                a{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

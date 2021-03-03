@@ -1,0 +1,161 @@
+/* Color */
+$primary-color: #333333;
+$secondary-color: #ffffff;
+$third-color: #f26522;
+$fourth-color: #f2f1f1;
+$fifth-color: #febc3d;
+$sixth-color: #898989;
+$seventh-color: #ca0202;
+
+/* $eighth-color: #fcfcfc;
+$ninth-color: #545454;
+$tenth-color: #0091ff; */
+
+$star-color: #fecf3d;
+
+/* font face */
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/lpg-MyriadPro-Regular.eot');
+    src: url('../fonts/lpg-MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/lpg-MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/lpg-MyriadPro-Regular.ttf') format('truetype'),
+        url('../fonts/lpg-MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans D OT';
+    src: url('../fonts/lpg-NimbusSansDOT-BoldCond.eot');
+    src: url('../fonts/lpg-NimbusSansDOT-BoldCond.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-NimbusSansDOT-BoldCond.woff2') format('woff2'),
+        url('../fonts/lpg-NimbusSansDOT-BoldCond.woff') format('woff'),
+        url('../fonts/lpg-NimbusSansDOT-BoldCond.ttf') format('truetype'),
+        url('../fonts/lpg-NimbusSansDOT-BoldCond.svg#NimbusSansDOT-BoldCond') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans D OT';
+    src: url('../fonts/lpg-NimbusSansDOT-ReguCond.eot');
+    src: url('../fonts/lpg-NimbusSansDOT-ReguCond.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-NimbusSansDOT-ReguCond.woff2') format('woff2'),
+        url('../fonts/lpg-NimbusSansDOT-ReguCond.woff') format('woff'),
+        url('../fonts/lpg-NimbusSansDOT-ReguCond.ttf') format('truetype'),
+        url('../fonts/lpg-NimbusSansDOT-ReguCond.svg#NimbusSansDOT-ReguCond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nimbus Sans Novus D OT';
+    src: url('../fonts/lpg-NimbusSansNovusDOT-Bol.eot');
+    src: url('../fonts/lpg-NimbusSansNovusDOT-Bol.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-NimbusSansNovusDOT-Bol.woff2') format('woff2'),
+        url('../fonts/lpg-NimbusSansNovusDOT-Bol.woff') format('woff'),
+        url('../fonts/lpg-NimbusSansNovusDOT-Bol.ttf') format('truetype'),
+        url('../fonts/lpg-NimbusSansNovusDOT-Bol.svg#NimbusSansNovusDOT-Bol') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('../fonts/lpg-SFCompactDisplay-Regular.eot');
+    src: url('../fonts/lpg-SFCompactDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-SFCompactDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/lpg-SFCompactDisplay-Regular.woff') format('woff'),
+        url('../fonts/lpg-SFCompactDisplay-Regular.ttf') format('truetype'),
+        url('../fonts/lpg-SFCompactDisplay-Regular.svg#SFCompactDisplay-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('../fonts/lpg-SFCompactDisplay-Medium.eot');
+    src: url('../fonts/lpg-SFCompactDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-SFCompactDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/lpg-SFCompactDisplay-Medium.woff') format('woff'),
+        url('../fonts/lpg-SFCompactDisplay-Medium.ttf') format('truetype'),
+        url('../fonts/lpg-SFCompactDisplay-Medium.svg#SFCompactDisplay-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* fonts */
+$primary-font: 'SFCompactDisplay'; /* 400, 500 */
+$secondary-font: 'Nimbus Sans D OT'; /* 400, 700 */
+$secondary-font2: 'Nimbus Sans Novus D OT'; /* 700 */
+$third-font: 'Myriad Pro', sans-serif; /* 400 */
+
+
+/* =============== Media Queries =============== */
+@mixin media374 {
+    @media only screen and (max-width:374px) {
+        @content;
+    }
+}
+@mixin media479 {
+    @media only screen and (max-width: 479px) {
+        @content;
+    }
+}
+@mixin media575 {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}
+@mixin media767 {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin media991 {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin media1199 {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+@mixin media1367 {
+    @media only screen and (max-width: 1367px) {
+        @content;
+    }
+}
+@mixin media1441 {
+    @media only screen and (max-width: 1441px) {
+        @content;
+    }
+}
+@mixin media1601 {
+    @media only screen and (max-width: 1601px) {
+        @content;
+    }
+}
+@mixin media1700 {
+    @media only screen and (max-width: 1700px) {
+        @content;
+    }
+}
+
+@mixin media1600-min {
+    @media only screen and (min-width: 1600px) {
+        @content;
+    }
+}
